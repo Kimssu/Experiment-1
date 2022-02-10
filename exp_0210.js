@@ -79,10 +79,11 @@
     }
 
     /* define fixation and test trials */
-  
+
     var fixation = {
       type: jsPsychHtmlKeyboardResponse,
-      stimulus: '<div style= "font-size: 60px;" "font-weigh: bold">+</div>',
+      stimulus: '<div style= "background-color: #fff; margin: 0 auto; width: 375px; height: 375px;" \
+        "font-size: 60px;" "font-weigh: bold">+</div>',
       choices: "NO_KEYS",
       trial_duration: 500, //milliseconds
       data: {
