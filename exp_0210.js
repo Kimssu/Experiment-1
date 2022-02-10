@@ -82,8 +82,7 @@
 
     var fixation = {
       type: jsPsychHtmlKeyboardResponse,
-      stimulus: '<div style= "background-color: #fff; margin: 0 auto; width: 375px; height: 375px;" \
-        "font-size: 60px;" "font-weigh: bold">+</div>',
+      stimulus: '<div class="squareback" "font-size: 60px;" "font-weigh: bold">+</div>',
       choices: "NO_KEYS",
       trial_duration: 500, //milliseconds
       data: {
@@ -210,7 +209,7 @@
 
     var blank = {
       type: jsPsychHtmlKeyboardResponse,
-      stimulus: '<div style= "background-color: #fff; margin: 0 auto;  width: 375px; height: 375px;"></div>',
+      stimulus: '<div class="squareback"></div>',
       choices: "NO_KEYS",
       trial_duration: 900,
       data: {
@@ -282,7 +281,7 @@
 
     var diversity = {
       type: jsPsychHtmlButtonResponse,
-      stimulus: '<p style="font-size: 30px;">font weight diversity?</p>',
+      stimulus: '<div class="squareback" "font-size: 30px;">font weight diversity?</div>',
       choices: ['High', 'Low'],
       data: {
         task: 'diversity'
