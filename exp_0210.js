@@ -281,7 +281,7 @@
 
     var diversity = {
       type: jsPsychHtmlButtonResponse,
-      stimulus: '<div class="squareback" "font-size: 30px;">font weight diversity?</div>',
+      stimulus: '<div class="squareback" "font-size: 60px;" "font-weigh: bold">font weight diversity?</div>',
       choices: ['High', 'Low'],
       data: {
         task: 'diversity'

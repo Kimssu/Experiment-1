@@ -1,6 +1,9 @@
       body { background-color: #eee; }
 
-      div.squareback { background-color: #fff; margin: 0 auto; width: 375px; height: 375px; }
+      .squareback { 
+        background-color: #fff; margin: 0 auto; width: 375px; height: 375px; 
+        display: flex; align-items: center; justify-content: center; 
+      }
       
       table.grid-5x1 { border: none; background-color: #fff; margin: 0 auto;  width: 375px; height: 375px; }
       table.grid-5x1 td {
