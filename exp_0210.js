@@ -222,7 +222,7 @@
       stimulus: function() {
         var row = jsPsych.timelineVariable('precue_loc');
         var col = jsPsych.timelineVariable('target_loc');
-        return `<table style="margin: 44px auto 10px;"
+        return `<table style="margin: 64px auto 30px;"
         class="grid-5x5 show-cue-` + row + `x` + col + `" cellpadding="0" cellspacing="0">
       <tr>
         <td class="cue-1x1 cue-img"></td>
@@ -281,7 +281,7 @@
 
     var diversity = {
       type: jsPsychHtmlButtonResponse,
-      stimulus: '<div class="squareback" style="font-size: 40px;">font weight diversity?</div>',
+      stimulus: '<div class="squareback" style="font-size: 30px;" "margin: 64px auto 30px;">font weight diversity?</div>',
       choices: ['High', 'Low'],
       data: {
         task: 'diversity'
@@ -307,7 +307,7 @@
       repetitions: 1,
       randomize_order: false
     };
-    timeline.push(prac1_procedure);
+    //timeline.push(prac1_procedure);
 
     var practice = {
       type: jsPsychHtmlKeyboardResponse,
