@@ -82,7 +82,7 @@
 
     var fixation = {
       type: jsPsychHtmlKeyboardResponse,
-      stimulus: '<div class="squareback" "font-size: 60px;" "font-weigh: bold">+</div>',
+      stimulus: '<p class="squareback" "font-size: 60px;" "font-weigh: bold">+</p>',
       choices: "NO_KEYS",
       trial_duration: 500, //milliseconds
       data: {
