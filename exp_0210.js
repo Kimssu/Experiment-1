@@ -307,7 +307,7 @@
       repetitions: 1,
       randomize_order: false
     };
-    //timeline.push(prac1_procedure);
+    timeline.push(prac1_procedure);
 
     var practice = {
       type: jsPsychHtmlKeyboardResponse,
