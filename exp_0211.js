@@ -338,7 +338,7 @@
 
     /* practice (w/o diversity response) */
     var prac1_stimuli = [];
-    for (let i = 0; i < 20; i++) {
+    for (let i = 0; i < 10; i++) {
       let trial_div = Math.floor(Math.random() * 2);
       let trial_info = {
         precue_loc: Math.floor(Math.random() * 5) + 1,
@@ -364,13 +364,13 @@
     };
     timeline.push(practice);
 
-    var test_procedure = {
+    var prac2_procedure = {
       timeline: [fixation, cue, array, blank, test, diversity],
       timeline_variables: test_stimuli,
-      repetitions: 2,
+      repetitions: 1,
       randomize_order: true
     };
-    timeline.push(test_procedure);
+    timeline.push(prac2_procedure);
 
     var start = {
       type: jsPsychHtmlKeyboardResponse,
@@ -382,6 +382,12 @@
 
     /* define test procedure */
 
+    var test_procedure = {
+      timeline: [fixation, cue, array, blank, test, diversity],
+      timeline_variables: test_stimuli,
+      repetitions: 2,
+      randomize_order: true
+    };
     timeline.push(test_procedure);
 
     var breaktime = {
