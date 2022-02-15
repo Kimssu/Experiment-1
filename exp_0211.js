@@ -8,6 +8,7 @@
     }
     all_imgs.push('https://kimssu.github.io/Experiment-1/letter-imgs/rcue-img.png');
     all_imgs.push('https://kimssu.github.io/Experiment-1/letter-imgs/cue-img.png');
+    all_imgs.push('https://kimssu.github.io/Experiment-1/letter-imgs/array.png');
 
     const adj_row = [
       [1, 2],
@@ -42,7 +43,7 @@
       type: jsPsychFullscreen,
       fullscreen_mode: true
     };
-    //timeline.push(enterFS);
+    timeline.push(enterFS);
 
     var instructions = {
       type: jsPsychInstructions,
@@ -358,7 +359,7 @@
       type: jsPsychFullscreen,
       fullscreen_mode: false
     };
-    //timeline.push(leaveFS);
+    timeline.push(leaveFS);
 
     /* start the experiment */
     jsPsych.run(timeline);
