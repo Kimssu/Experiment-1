@@ -27,12 +27,51 @@
 
     var jsPsych = initJsPsych({
       on_finish: function() {
-        jsPsych.data.displayData();
+        if (window.hasOwnProperty('RUN_ID') && window.hasOwnProperty('LAST_MSG')) {  // cognition.run workaround
+            var c = document.getElementById('jspsych-content');
+            c.innerHTML = window.LAST_MSG;
+        } else {
+            jsPsych.data.displayData();
+            // prolofic integration
+            //window.location = "https://app.prolific.co/submissions/complete?cc=XXXXXXX";
+        }
       }
     });
 
+    // prolific integration
+    /*var subject_id = jsPsych.data.getURLVariable('PROLIFIC_PID');
+    var study_id = jsPsych.data.getURLVariable('STUDY_ID');
+    var session_id = jsPsych.data.getURLVariable('SESSION_ID');
+    jsPsych.data.addProperties({
+      subject_id: subject_id,
+      study_id: study_id,
+      session_id: session_id
+    });*/
+
     var timeline = [];
 
+    var browser_check = {
+        type: jsPsychBrowserCheck,
+        skip_features: ['webaudio', 'webcam', 'microphone'],
+        inclusion_function: function(data) {
+          return ['chrome', 'edge-chromium', 'firefox'].includes(data.browser) && (data.mobile === false);
+        },
+        exclusion_message: function(data) {
+          var last_msg = data.mobile ?
+            '<p>You must use a desktop/laptop computer to participate in this experiment.</p>' :
+            ('edge' == data.browser ?
+              '<p>You must use a newer version of Edge (released in or after 2020) to participate in this experiment.</p>' :
+              '<p>You must use Chrome, Edge, Firefox, or Safari to participate in this experiment.</p>');
+          if (window.hasOwnProperty('RUN_ID')) {  // cognition.run workaround
+            window.LAST_MSG = last_msg;
+            return '';
+          } else {
+            return last_msg;
+          }
+        }
+    };
+    timeline.push(browser_check);
+  
     var preload = {
       type: jsPsychPreload,
       images: all_imgs
@@ -270,6 +309,8 @@
         var corr_resp = letter_array[(precue_loc - 1) * 5 + (target_loc - 1)];
         return {
           task: 'response',
+          adj_div: jsPsych.timelineVariable('adj_div'),
+          far_div: jsPsych.timelineVariable('far_div'),
           precue_loc: precue_loc,
           target_loc: target_loc,
           correct_response: corr_resp
@@ -284,8 +325,14 @@
       type: jsPsychHtmlButtonResponse,
       stimulus: '<div class="squareback" style= "margin: 64px auto 30px;" "font-size: 30px;">font weight diversity?</div>',
       choices: ['High', 'Low'],
-      data: {
-        task: 'diversity'
+      data: function() {
+        return {
+          task: 'diversity',
+          adj_div: jsPsych.timelineVariable('adj_div'),
+          far_div: jsPsych.timelineVariable('far_div'),
+          precue_loc: jsPsych.timelineVariable('precue_loc'),
+          letter_correct: jsPsych.data.get().last(1).values()[0].correct
+        };
       }
     };
 
@@ -351,7 +398,12 @@
     /* define debrief */
     var debrief_block = {
       type: jsPsychHtmlKeyboardResponse,
-      stimulus: '<p>Press any key to complete the experiment. Thank you!</p>'
+      stimulus: '<p>Press any key to complete the experiment. Thank you!</p>',
+      on_finish: function(data) {
+        jsPsych.data.addProperties({
+          completed: true
+        });
+      }
     };
     timeline.push(debrief_block);
 
