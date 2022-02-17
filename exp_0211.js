@@ -61,7 +61,7 @@
             '<p>You must use a desktop/laptop computer to participate in this experiment.</p>' :
             ('edge' == data.browser ?
               '<p>You must use a newer version of Edge (released in or after 2020) to participate in this experiment.</p>' :
-              '<p>You must use Chrome, Edge, Firefox, or Safari to participate in this experiment.</p>');
+              '<p>You must use Chrome, Edge, or Firefox to participate in this experiment.</p>');
           if (window.hasOwnProperty('RUN_ID')) {  // cognition.run workaround
             window.LAST_MSG = last_msg;
             return '';
