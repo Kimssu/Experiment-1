@@ -8,7 +8,7 @@
     }
     all_imgs.push('https://kimssu.github.io/Experiment-1/letter-imgs/rcue-img.png');
     all_imgs.push('https://kimssu.github.io/Experiment-1/letter-imgs/cue-img.png');
-    all_imgs.push('https://kimssu.github.io/Experiment-1/letter-imgs/array.png');
+    all_imgs.push('https://kimssu.github.io/Experiment-1/letter-imgs/procedure.png');
 
     const adj_row = [
       [1, 2],
@@ -88,7 +88,7 @@
       type: jsPsychInstructions,
       pages: [
       'Welcome to the experiment. <br>Click next to begin.',
-      '<img src="https://kimssu.github.io/Experiment-1/letter-imgs/array.png"> \
+      '<img src="https://kimssu.github.io/Experiment-1/letter-imgs/procedure.png"> \
       <br><br> In this experiment, a row-sized square, the 25-letter array and a letter-sized square will appear in the center of the screen.\
       <br> The main task was to remember the letter at the location of a letter-sized square.\
       <br> A letter-sized square will appear within a row-sized square location.\
