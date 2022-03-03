@@ -9,8 +9,10 @@
     all_imgs.push('https://kimssu.github.io/Experiment-1/letter-imgs/rcue-img.png');
     all_imgs.push('https://kimssu.github.io/Experiment-1/letter-imgs/cue-img.png');
     all_imgs.push('https://kimssu.github.io/Experiment-1/letter-imgs/procedure.png');
-    all_imgs.push('https://kimssu.github.io/Experiment-1/letter-imgs/diversity-h.png');
-    all_imgs.push('https://kimssu.github.io/Experiment-1/letter-imgs/diversity-l.png');
+    all_imgs.push('https://kimssu.github.io/Experiment-1/letter-imgs/div_h.png');
+    all_imgs.push('https://kimssu.github.io/Experiment-1/letter-imgs/div_l1.png');  
+    all_imgs.push('https://kimssu.github.io/Experiment-1/letter-imgs/div_l2.png');
+
 
     const adj_row = [
       [1, 2],
@@ -95,8 +97,9 @@
       <br> The main task was to remember the letter at the location of a letter-sized square.\
       <br> A letter-sized square will appear within a row-sized square location.\
       <br> When a letter-sized square appears on the screen, Click the letter at that location.',
-      '<img src="https://kimssu.github.io/Experiment-1/letter-imgs/diversity-h.png"> \
-      <br><img src="https://kimssu.github.io/Experiment-1/letter-imgs/diversity-l.png"> \
+      '<img src="https://kimssu.github.io/Experiment-1/letter-imgs/div_h.png"> \
+      <br><img src="https://kimssu.github.io/Experiment-1/letter-imgs/div_l2.png"> \
+      <br><img src="https://kimssu.github.io/Experiment-1/letter-imgs/div_l1.png"> \
       <br> font-weight diversity question \
       <br> After reporting the letter, Click the button to indicate the font-weight diversity level (low or high)',
       'practice trial'
