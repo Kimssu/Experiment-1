@@ -222,23 +222,65 @@
         var far_div = jsPsych.timelineVariable('far_div');
         var ld_base = Math.floor(Math.random() * 7);
         for (let i = 0; i < 5; i++) {
-          trial_width[row * 5 + i] = width[4];
+          if (adj_div == 0 && far_div == 0) {
+            trial_width[row * 5 + i] = width[ld_base + 1];
+          }
+          else if (adj_div == 1 && far_div == 1) {
+            trial_width[row * 5 + i] = width[4];
         }
-        for (let i = 0; i < 2; i++) {
-          for (let j = 0; j < 5; j++) {
-            if (adj_div == 0) { // less diverse
-              trial_width[adj_row[row][i] * 5 + j] = width[ld_base + Math.floor(Math.random() * 3)];
-            } else {
-              trial_width[adj_row[row][i] * 5 + j] = width[Math.floor(Math.random() * 9)];
+          else {
+            switch (ld_base) {
+              case 0:
+              case 1:
+                trial_width[row * 5 + i] = width[3];
+                break;
+              case 2:
+              case 3:
+              case 4:
+                trial_width[row * 5 + i] = width[4];
+                break;
+              case 5:
+              case 6:
+                trial_width[row * 5 + i] = width[5];
+                break;
             }
           }
         }
         for (let i = 0; i < 2; i++) {
-          for (let j = 0; j < 5; j++) {
-            if (far_div == 0) { // less diverse
-              trial_width[far_row[row][i] * 5 + j] = width[ld_base + Math.floor(Math.random() * 3)];
-            } else {
-              trial_width[far_row[row][i] * 5 + j] = width[Math.floor(Math.random() * 9)];
+          if (adj_div == 0) { // less diverse
+            let shuffled = [0,1,2,0,1,2]
+              .map(value => ({ value, sort: Math.random() }))
+              .sort((a, b) => a.sort - b.sort)
+              .map(({ value }) => value);
+            for (let j = 0; j < 5; j++) {
+              trial_width[adj_row[row][i] * 5 + j] = width[ld_base + shuffled[j]];
+            }
+          } else {
+            let shuffled = [0,1,2,3,4,5,6,7,8]
+              .map(value => ({ value, sort: Math.random() }))
+              .sort((a, b) => a.sort - b.sort)
+              .map(({ value }) => value);
+            for (let j = 0; j < 5; j++) {
+              trial_width[adj_row[row][i] * 5 + j] = width[shuffled[j]];
+            }
+          }
+        }
+        for (let i = 0; i < 2; i++) {
+          if (far_div == 0) { // less diverse
+            let shuffled = [0,1,2,0,1,2]
+              .map(value => ({ value, sort: Math.random() }))
+              .sort((a, b) => a.sort - b.sort)
+              .map(({ value }) => value);
+            for (let j = 0; j < 5; j++) {
+              trial_width[far_row[row][i] * 5 + j] = width[ld_base + shuffled[j]];
+            }
+          } else {
+            let shuffled = [0,1,2,3,4,5,6,7,8]
+              .map(value => ({ value, sort: Math.random() }))
+              .sort((a, b) => a.sort - b.sort)
+              .map(({ value }) => value);
+            for (let j = 0; j < 5; j++) {
+              trial_width[far_row[row][i] * 5 + j] = width[shuffled[j]];
             }
           }
         }
