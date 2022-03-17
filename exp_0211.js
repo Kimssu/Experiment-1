@@ -416,7 +416,7 @@
     var prac2_procedure = {
       timeline: [fixation, cue, array, blank, test, diversity],
       timeline_variables: test_stimuli,
-      repetitions: 1,
+      repetitions: 2,
       randomize_order: true
     };
     timeline.push(prac2_procedure);
@@ -434,19 +434,24 @@
     var test_procedure = {
       timeline: [fixation, cue, array, blank, test, diversity],
       timeline_variables: test_stimuli,
-      repetitions: 2,
+      repetitions: 4,
       randomize_order: true
     };
     timeline.push(test_procedure);
 
     var breaktime = {
       type: jsPsychHtmlKeyboardResponse,
-      stimulus: '<div style= "font-size: 30px;" "font-weigh: bold">breaktime</div>',
-      choices: "NO_KEYS",
-      trial_duration: 15000, 
+      stimulus: '<div style= "font-size: 30px;" "font-weigh: bold">breaktime\
+      <br>Press any key to begin</div>',
     };
     timeline.push(breaktime);
 
+    timeline.push(test_procedure);
+
+    timeline.push(breaktime);
+    timeline.push(test_procedure);
+
+    timeline.push(breaktime);
     timeline.push(test_procedure);
 
 
