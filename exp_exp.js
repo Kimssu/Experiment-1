@@ -82,11 +82,18 @@
     };
     timeline.push(browser_check);
   
-    var preload = {
+    var preload1 = {
       type: jsPsychPreload,
-      images: all_imgs, time_imgs
+      images: all_imgs
     }
-    timeline.push(preload);
+    timeline.push(preload1);
+
+    var preload2 = {
+      type: jsPsychPreload,
+      images: time_imgs
+    }
+    timeline.push(preload2);
+
 
     var enterFS = {
       type: jsPsychFullscreen,
@@ -106,7 +113,6 @@
       '<img src="https://kimssu.github.io/Experiment-1/letter-imgs/div_l2.png"> \
       <img src="https://kimssu.github.io/Experiment-1/letter-imgs/div_l1.png"> \
       <img src="https://kimssu.github.io/Experiment-1/letter-imgs/div_h.png"> \
-      <img src="https://kimssu.github.io/Experiment-1/time-imgs/time_34.png"> \
       <br> font-weight diversity question \
       <br> After reporting the letter, Click the button to indicate the font-weight diversity level (low or high)',
       'practice trial'
