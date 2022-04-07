@@ -144,7 +144,7 @@
       type: jsPsychHtmlKeyboardResponse,
       stimulus: '<div class="squareback" style="font-size: 60px;" "font-weigh: bold;">+</div>',
       choices: "NO_KEYS",
-      trial_duration: 500, //milliseconds
+      //trial_duration: 500, //milliseconds
       data: {
         task: 'fixation'
       }
@@ -387,7 +387,7 @@
 
     var diversity = {
       type: jsPsychHtmlButtonResponse,
-      stimulus: '<div class="squareback" style= "font-size: 30px;"></div>\
+      stimulus: '<div class="squareback" style= "margin: 64px auto 30px;"></div>\
       <p>font weight diversity?</p>',
       choices: ['Low', 'High'],
       data: function() {
