@@ -390,9 +390,9 @@
       stimulus: function(){
         var last_trial_correct = jsPsych.data.get().last(1).values()[0].correct;
         if(last_trial_correct){
-          return "<p>Correct</p>";
+          return "<div class='squareback' style= 'margin: 65px auto 30px;'></div> <p>Correct</p>";
         } else {
-          return "<p>Wrong</p>";
+          return "<div class='squareback' style= 'margin: 65px auto 30px;'></div> <p>Wrong</p>";
         }
       },
       choices: "NO_KEYS",
