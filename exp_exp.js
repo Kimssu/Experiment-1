@@ -8,8 +8,8 @@
       }
     }
     var time_imgs = [];
-    for (let i = 0; i < 52; i++) {
-      time_imgs.push()
+    for (let i = 1; i < 52; i++) {
+      time_imgs.push('https://kimssu.github.io/Experiment-1/time-imgs/time_'+i+'.png');
     }
 
     all_imgs.push('https://kimssu.github.io/Experiment-1/letter-imgs/rcue-img.png');
@@ -412,7 +412,7 @@
       repetitions: 1,
       randomize_order: false
     };
-    timeline.push(prac1_procedure);
+    //timeline.push(prac1_procedure);
 
     var practice = {
       type: jsPsychHtmlKeyboardResponse,
@@ -427,7 +427,7 @@
       repetitions: 2,
       randomize_order: true
     };
-    timeline.push(prac2_procedure);
+    //timeline.push(prac2_procedure);
 
     var start = {
       type: jsPsychHtmlKeyboardResponse,
@@ -445,7 +445,16 @@
       repetitions: 4,
       randomize_order: true
     };
-    timeline.push(test_procedure);
+    //timeline.push(test_procedure);
+
+    var break1_time = {
+      type: jsPsychAnimation,
+      stimuli: time_imgs,
+      frame_time: 600,
+      choices: "NO_KEYS",
+    };
+    timeline.push(break1_time);
+
 
     var breaktime = {
       type: jsPsychHtmlKeyboardResponse,
