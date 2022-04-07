@@ -422,9 +422,10 @@
     //timeline.push(prac1_procedure);
 
     var practice = {
-      type: jsPsychHtmlKeyboardResponse,
+      type: jsPsychHtmlButtonResponse,
       stimulus: '<div style= "font-size: 30px;" "font-weigh: bold">add question\
         <br>Press any key to begin</div>',
+      choices: ['Next']
     };
     timeline.push(practice);
 
@@ -437,9 +438,10 @@
     //timeline.push(prac2_procedure);
 
     var start = {
-      type: jsPsychHtmlKeyboardResponse,
+      type: jsPsychHtmlButtonResponse,
       stimulus: '<div style= "font-size: 30px;" "font-weigh: bold">experiment start\
         <br>Press any key to begin</div>',
+      choices: ['Next']
     };
     timeline.push(start);
 
@@ -463,19 +465,22 @@
     timeline.push(break1_time);
 
 
-    var breaktime = {
-      type: jsPsychHtmlKeyboardResponse,
+    var break2_time = {
+      type: jsPsychHtmlButtonResponse,
       stimulus: '<div style= "font-size: 30px;" "font-weigh: bold">breaktime\
       <br>Press any key to begin</div>',
+      choices: ['Next']
     };
-    timeline.push(breaktime);
+    timeline.push(break2_time);
 
     timeline.push(test_procedure);
 
-    timeline.push(breaktime);
+    timeline.push(break1_time);
+    timeline.push(break2_time);
     timeline.push(test_procedure);
 
-    timeline.push(breaktime);
+    timeline.push(break1_time);
+    timeline.push(break2_time);
     timeline.push(test_procedure);
 
 
