@@ -9,7 +9,7 @@
     }
     var time_imgs = [];
     for (let i = 1; i < 52; i++) {
-      time_imgs.push('https://kimssu.github.io/Experiment-1/time-imgs/time_'+i+'.png');
+      time_imgs.push('https://kimssu.github.io/Experiment-1/time-imgs/time_'+i+'.PNG');
     }
 
     all_imgs.push('https://kimssu.github.io/Experiment-1/letter-imgs/rcue-img.png');
