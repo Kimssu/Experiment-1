@@ -144,7 +144,7 @@
       type: jsPsychHtmlKeyboardResponse,
       stimulus: '<div class="squareback" style="font-size: 60px;" "font-weigh: bold;">+</div>',
       choices: "NO_KEYS",
-      //trial_duration: 500, //milliseconds
+      trial_duration: 500, //milliseconds
       data: {
         task: 'fixation'
       }
