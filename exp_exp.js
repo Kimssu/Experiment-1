@@ -424,7 +424,8 @@
     var practice = {
       type: jsPsychHtmlButtonResponse,
       stimulus: '<div style= "font-size: 30px;" "font-weigh: bold">add question\
-        <br>Press any key to begin</div>',
+        <br>Press any key to begin</div>\
+        <br>',
       choices: ['Next']
     };
     timeline.push(practice);
