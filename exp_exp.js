@@ -416,10 +416,10 @@
     var prac1_procedure = {
       timeline: [fixation, cue, array, blank, test],
       timeline_variables: prac1_stimuli,
-      repetitions: 1,
+      repetitions: 4,
       randomize_order: false
     };
-    //timeline.push(prac1_procedure);
+    timeline.push(prac1_procedure);
 
     var practice = {
       type: jsPsychHtmlButtonResponse,
@@ -433,15 +433,16 @@
     var prac2_procedure = {
       timeline: [fixation, cue, array, blank, test, diversity],
       timeline_variables: test_stimuli,
-      repetitions: 2,
+      repetitions: 1,
       randomize_order: true
     };
-    //timeline.push(prac2_procedure);
+    timeline.push(prac2_procedure);
 
     var start = {
       type: jsPsychHtmlButtonResponse,
       stimulus: '<div style= "font-size: 30px;" "font-weigh: bold">experiment start\
-        <br>Press any key to begin</div>',
+        <br>Press any key to begin</div>\
+        <br>',
       choices: ['Next']
     };
     timeline.push(start);
@@ -455,7 +456,7 @@
       repetitions: 4,
       randomize_order: true
     };
-    //timeline.push(test_procedure);
+    timeline.push(test_procedure);
 
     var break1_time = {
       type: jsPsychAnimation,
@@ -469,7 +470,8 @@
     var break2_time = {
       type: jsPsychHtmlButtonResponse,
       stimulus: '<div style= "font-size: 30px;" "font-weigh: bold">breaktime\
-      <br>Press any key to begin</div>',
+      <br>Press any key to begin</div>\
+      <br>',
       choices: ['Next']
     };
     timeline.push(break2_time);
@@ -487,8 +489,9 @@
 
     /* define debrief */
     var debrief_block = {
-      type: jsPsychHtmlKeyboardResponse,
-      stimulus: '<p>Press any key to complete the experiment. Thank you!</p>',
+      type: jsPsychHtmlButtonResponse,
+      stimulus: '<p>Press any key to complete the experiment.</p>',
+      choices: ['Thank you'],
       on_finish: function(data) {
         jsPsych.data.addProperties({
           completed: true
