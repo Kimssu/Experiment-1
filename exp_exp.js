@@ -387,7 +387,8 @@
 
     var diversity = {
       type: jsPsychHtmlButtonResponse,
-      stimulus: '<div class="squareback" style= "margin: 64px auto 30px;" "font-size: 30px;">font weight diversity?</div>',
+      stimulus: '<div class="squareback" style= "margin: 64px auto 30px;" "font-size: 30px;"></div>\
+      <p>font weight diversity?</p>',
       choices: ['Low', 'High'],
       data: function() {
         return {
@@ -419,7 +420,7 @@
       repetitions: 4,
       randomize_order: false
     };
-    timeline.push(prac1_procedure);
+    //timeline.push(prac1_procedure);
 
     var practice = {
       type: jsPsychHtmlButtonResponse,
