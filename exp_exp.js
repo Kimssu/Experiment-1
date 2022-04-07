@@ -1,11 +1,17 @@
     const letter = ['B', 'F', 'K', 'L', 'M', 'N', 'P', 'R', 'T'];
     const width = [100, 200, 300, 400, 500, 600, 700, 800, 900];
+
     var all_imgs = [];
     for (let l = 0; l < letter.length; l++) {
       for (let w = 0; w < width.length; w++) {
         all_imgs.push('https://kimssu.github.io/Experiment-1/letter-imgs_110/'+letter[l]+'_'+width[w]+'.png');
       }
     }
+    var time_imgs = [];
+    for (let i = 0; i < 52; i++) {
+      time_imgs.push()
+    }
+
     all_imgs.push('https://kimssu.github.io/Experiment-1/letter-imgs/rcue-img.png');
     all_imgs.push('https://kimssu.github.io/Experiment-1/letter-imgs/cue-img.png');
     all_imgs.push('https://kimssu.github.io/Experiment-1/letter-imgs/procedure.png');
@@ -221,8 +227,10 @@
         var adj_div = jsPsych.timelineVariable('adj_div');
         var far_div = jsPsych.timelineVariable('far_div');
         var ld_base = Math.floor(Math.random() * 7);
+        var ld_bbase = Math.floor(Math.random() * 5) + 1;
         for (let i = 0; i < 5; i++) {
           if (adj_div == 0 && far_div == 0) {
+            ld_base = ld_bbase;
             trial_width[row * 5 + i] = width[ld_base + 1];
           }
           else if (adj_div == 1 && far_div == 1) {
