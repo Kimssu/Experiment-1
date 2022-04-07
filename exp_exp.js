@@ -84,7 +84,7 @@
   
     var preload = {
       type: jsPsychPreload,
-      images: all_imgs
+      images: all_imgs, time_imgs
     }
     timeline.push(preload);
 
