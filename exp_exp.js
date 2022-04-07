@@ -396,7 +396,7 @@
         }
       },
       choices: "NO_KEYS",
-      trial_duration: 400,
+      //trial_duration: 400,
     }
 
     var diversity = {
