@@ -385,6 +385,20 @@
       },
     };
 
+    var feedback = {
+      type: jsPsychHtmlKeyboardResponse,
+      stimulus: function(){
+        var last_trial_correct = jsPsych.data.get().last(1).values()[0].correct;
+        if(last_trial_correct){
+          return "<p>Correct</p>";
+        } else {
+          return "<p>Wrong</p>";
+        }
+      },
+      choices: "NO_KEYS",
+      trial_duration: 400,
+    }
+
     var diversity = {
       type: jsPsychHtmlButtonResponse,
       stimulus: '<div class="squareback" style= "margin: 110px auto 30px;"></div>\
@@ -396,7 +410,7 @@
           adj_div: jsPsych.timelineVariable('adj_div'),
           far_div: jsPsych.timelineVariable('far_div'),
           precue_loc: jsPsych.timelineVariable('precue_loc'),
-          letter_correct: jsPsych.data.get().last(1).values()[0].correct
+          letter_correct: jsPsych.data.get().last(2).values()[0].correct
         };
       }
     };
@@ -415,7 +429,7 @@
     }
 
     var prac1_procedure = {
-      timeline: [fixation, cue, array, blank, test],
+      timeline: [fixation, cue, array, blank, test, feedback],
       timeline_variables: prac1_stimuli,
       repetitions: 4,
       randomize_order: false
@@ -432,7 +446,7 @@
     timeline.push(practice);
 
     var prac2_procedure = {
-      timeline: [fixation, cue, array, blank, test, diversity],
+      timeline: [fixation, cue, array, blank, test, feedback, diversity],
       timeline_variables: test_stimuli,
       repetitions: 1,
       randomize_order: true
@@ -452,7 +466,7 @@
     /* define test procedure */
 
     var test_procedure = {
-      timeline: [fixation, cue, array, blank, test, diversity],
+      timeline: [fixation, cue, array, blank, test, feedback, diversity],
       timeline_variables: test_stimuli,
       repetitions: 4,
       randomize_order: true
