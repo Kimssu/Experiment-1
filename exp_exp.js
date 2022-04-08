@@ -104,18 +104,9 @@
     var instructions = {
       type: jsPsychInstructions,
       pages: [
-      'Welcome to the experiment. <br>Click next to begin.',
-      '<img src="https://kimssu.github.io/Experiment-1/letter-imgs/procedure.png"> \
-      <br><br> In this experiment, a row-sized square, the 25-letter array and a letter-sized square will appear in the center of the screen.\
-      <br> The main task was to remember the letter at the location of a letter-sized square.\
-      <br> A letter-sized square will appear within a row-sized square location.\
-      <br> When a letter-sized square appears on the screen, Click the letter at that location.',
-      '<img src="https://kimssu.github.io/Experiment-1/letter-imgs/div_l2.png"> \
-      <img src="https://kimssu.github.io/Experiment-1/letter-imgs/div_l1.png"> \
-      <img src="https://kimssu.github.io/Experiment-1/letter-imgs/div_h.png"> \
-      <br> font-weight diversity question \
-      <br> After reporting the letter, Click the button to indicate the font-weight diversity level (low or high)',
-      'practice trial'
+      'Welcome',
+      'first task \
+      <br>practice trial'
       ],
       button_label_next: "Continue",
       button_label_previous: "Previous",
@@ -397,6 +388,9 @@
       },
       choices: "NO_KEYS",
       trial_duration: 400,
+      data: {
+        task: 'feedback'
+      }
     }
 
     var diversity = {
@@ -438,8 +432,7 @@
 
     var practice = {
       type: jsPsychHtmlButtonResponse,
-      stimulus: '<div style= "font-size: 30px;" "font-weigh: bold">add question\
-        <br>Press any key to begin</div>\
+      stimulus: '<div style= "font-size: 30px;" "font-weigh: bold"> second task \
         <br>',
       choices: ['Next']
     };
@@ -455,8 +448,7 @@
 
     var start = {
       type: jsPsychHtmlButtonResponse,
-      stimulus: '<div style= "font-size: 30px;" "font-weigh: bold">experiment start\
-        <br>Press any key to begin</div>\
+      stimulus: '<div style= "font-size: 30px;" "font-weigh: bold"> experiment start\
         <br>',
       choices: ['Next']
     };
@@ -484,8 +476,7 @@
 
     var break2_time = {
       type: jsPsychHtmlButtonResponse,
-      stimulus: '<div style= "font-size: 30px;" "font-weigh: bold">breaktime\
-      <br>Press any key to begin</div>\
+      stimulus: '<div style= "font-size: 30px;" "font-weigh: bold"> break time\
       <br>',
       choices: ['Next']
     };
@@ -505,7 +496,7 @@
     /* define debrief */
     var debrief_block = {
       type: jsPsychHtmlButtonResponse,
-      stimulus: '<p>Press any key to complete the experiment.</p>',
+      stimulus: '<p>complete the experiment.</p>',
       choices: ['Thank you'],
       on_finish: function(data) {
         jsPsych.data.addProperties({
