@@ -82,18 +82,11 @@
     };
     timeline.push(browser_check);
   
-    var preload1 = {
+    var preload = {
       type: jsPsychPreload,
-      images: all_imgs
+      images: all_imgs.concat(time_imgs)
     }
     timeline.push(preload1);
-
-    var preload2 = {
-      type: jsPsychPreload,
-      images: time_imgs
-    }
-    timeline.push(preload2);
-
 
     var enterFS = {
       type: jsPsychFullscreen,
@@ -224,11 +217,15 @@
         var row = jsPsych.timelineVariable('precue_loc') - 1;
         var adj_div = jsPsych.timelineVariable('adj_div');
         var far_div = jsPsych.timelineVariable('far_div');
-        var ld_base = Math.floor(Math.random() * 7);
-        var ld_bbase = Math.floor(Math.random() * 5) + 1;
+        var ld_base;
+        if (adj_div == 0 && far_div == 0) {
+          ld_base = Math.floor(Math.random() * 5) + 1
+        }
+        else {
+          ld_base = Math.floor(Math.random() * 7);
+        }
         for (let i = 0; i < 5; i++) {
           if (adj_div == 0 && far_div == 0) {
-            ld_base = ld_bbase;
             trial_width[row * 5 + i] = width[ld_base + 1];
           }
           else if (adj_div == 1 && far_div == 1) {
