@@ -97,9 +97,13 @@
     var instructions = {
       type: jsPsychInstructions,
       pages: [
-      'Welcome',
-      'first task \
-      <br>practice trial'
+      '<img src="https://kimssu.github.io/Experiment-1/letter-imgs/pro1.png">'
+      <br> 'Once you start a trial,\
+      1) A balck rectangle will indicate the row you neec to remember \
+      2) Then, 5 × 5 array of letters will be falshed quickly \
+      3) You will choose the letter presented in the location of the black square (here, it is T). \
+      4) Feedback (correct/wrong) will be provided \
+      Lets practice.'
       ],
       button_label_next: "Continue",
       button_label_previous: "Previous",
@@ -429,8 +433,7 @@
 
     var practice = {
       type: jsPsychHtmlButtonResponse,
-      stimulus: '<div style= "font-size: 30px;" "font-weigh: bold"> second task \
-        <br>',
+      stimulus: '<div style= "font-size: 30px;" "font-weigh: bold"> second task </div>',
       choices: ['Next']
     };
     timeline.push(practice);
