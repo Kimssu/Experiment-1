@@ -96,7 +96,19 @@
 
     var instructions = {
       type: jsPsychInstructions,
-      pages: [ 'hello'
+      pages: [
+        'Welcome to the experiment. <br>Click next to begin.',
+        '<img src="https://kimssu.github.io/Experiment-1/letter-imgs/procedure.png"> \
+        <br><br> In this experiment, a row-sized square, the 25-letter array and a letter-sized square will appear in the center of the screen.\
+        <br> The main task was to remember the letter at the location of a letter-sized square.\
+        <br> A letter-sized square will appear within a row-sized square location.\
+        <br> When a letter-sized square appears on the screen, Click the letter at that location.',
+        '<img src="https://kimssu.github.io/Experiment-1/letter-imgs/div_l2.png"> \
+        <img src="https://kimssu.github.io/Experiment-1/letter-imgs/div_l1.png"> \
+        <img src="https://kimssu.github.io/Experiment-1/letter-imgs/div_h.png"> \
+        <br> font-weight diversity question \
+        <br> After reporting the letter, Click the button to indicate the font-weight diversity level (low or high)',
+        'practice trial'
       ],
       button_label_next: "Continue",
       button_label_previous: "Previous",
