@@ -96,13 +96,7 @@
 
     var instructions = {
       type: jsPsychInstructions,
-      pages: [
-      'Once you start a trial,\
-      1) A balck rectangle will indicate the row you neec to remember \
-      2) Then, 5 × 5 array of letters will be falshed quickly \
-      3) You will choose the letter presented in the location of the black square (here, it is T). \
-      4) Feedback (correct/wrong) will be provided \
-      Lets practice.'
+      pages: [ 'hello'
       ],
       button_label_next: "Continue",
       button_label_previous: "Previous",
