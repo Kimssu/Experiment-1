@@ -86,7 +86,7 @@
       type: jsPsychPreload,
       images: all_imgs.concat(time_imgs)
     }
-    timeline.push(preload1);
+    timeline.push(preload);
 
     var enterFS = {
       type: jsPsychFullscreen,
@@ -228,7 +228,7 @@
         var far_div = jsPsych.timelineVariable('far_div');
         var ld_base;
         if (adj_div == 0 && far_div == 0) {
-          ld_base = Math.floor(Math.random() * 5) + 1
+          ld_base = Math.floor(Math.random() * 5) + 1;
         }
         else {
           ld_base = Math.floor(Math.random() * 7);
@@ -239,7 +239,7 @@
           }
           else if (adj_div == 1 && far_div == 1) {
             trial_width[row * 5 + i] = width[4];
-        }
+          }
           else {
             switch (ld_base) {
               case 0:
