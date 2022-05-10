@@ -441,9 +441,9 @@
       repetitions: 4,
       randomize_order: false
     };
-    timeline.push(prac1_procedure);
+    //timeline.push(prac1_procedure);
 
-    var practice = {
+    var practice1 = {
       type: jsPsychHtmlButtonResponse,
       stimulus: "<p> \
       <br> Now you will be asked one more question at the end of the trial,\
@@ -451,10 +451,24 @@
       <br> 5) You will judge the font-weight diversity of the 5 × 5 array.\
       <br> <br> <stlye='font-color: red';> BUT please remember that it is more important to \
       report the letter in the black square correctly.\
-      <br> Before practice, let's see how high/low diversity letters look like",
+      <br> Before practice, let's see how high/low diversity letters look like</p>",
       choices: ['Next']
     };
-    timeline.push(practice);
+    timeline.push(practice1);
+
+    var practice2 = {
+      type: jsPsychHtmlButtonResponse,
+      stimulus: '<p> \
+      <br> In this example,\
+      <br> a) has low diversity since all letters are thin,\
+      <br> b) also low diversity since all letters are thick,\
+      <br> c) has high diversity since letters have varying weights\
+      <br> ,br> In this task, diversity can be somewhere in between low (a, b) and high (c).\
+      <br> You need to decide your own criterion, and use it through out the task.</p>',
+      choices: ["Let's practice"]
+    };
+    timeline.push(practice2);
+
 
     var prac2_procedure = {
       timeline: [fixation, cue, array, blank, test, feedback, diversity],
@@ -462,13 +476,13 @@
       repetitions: 1,
       randomize_order: true
     };
-    timeline.push(prac2_procedure);
+    //timeline.push(prac2_procedure);
 
     var start = {
       type: jsPsychHtmlButtonResponse,
-      stimulus: '<div style= "font-size: 30px;" "font-weigh: bold"> experiment start\
-        <br>',
-      choices: ['Next']
+      stimulus: "<p> Let's start main experiment.\
+      <br> You will complete 4 blocks with short breaks between the blocks.</p>",
+      choices: ['start']
     };
     timeline.push(start);
 
@@ -481,7 +495,7 @@
       repetitions: 4,
       randomize_order: true
     };
-    timeline.push(test_procedure);
+    //timeline.push(test_procedure);
 
     var break1_time = {
       type: jsPsychAnimation,
@@ -494,9 +508,8 @@
 
     var break2_time = {
       type: jsPsychHtmlButtonResponse,
-      stimulus: '<div style= "font-size: 30px;" "font-weigh: bold"> break time\
-      <br>',
-      choices: ['Next']
+      stimulus: '<p> Click on the button below to start next block.</p>',
+      choices: ['start']
     };
     timeline.push(break2_time);
 
