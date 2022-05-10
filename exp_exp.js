@@ -98,12 +98,12 @@
     var instructions = {
       type: jsPsychHtmlButtonResponse,
       stimulus: 
-        '<p img src="https://kimssu.github.io/Experiment-1/letter-imgs/pro1.png"> \
+        '<p><img src="https://kimssu.github.io/Experiment-1/letter-imgs/pro1.png"> \
         <br> Once you start a trial. \
         <br> 1) A black rectangle will indicate the row you need to remember\
         <br> 2) Then, 5 × 5 array of letters will be flashed quickly\
         <br> 3) You will choose the letter presented in the location of the black square (here, it is T)\
-        <br> 4) Feedback (correct/wrong) will be provided'
+        <br> 4) Feedback (correct/wrong) will be provided</p>'
       ,
       choices: ["Let's practice"]
     };
