@@ -432,7 +432,8 @@
 
     var practice = {
       type: jsPsychHtmlButtonResponse,
-      stimulus: '<div style= "font-size: 30px;" "font-weigh: bold"> second task </div>',
+      stimulus: '<div style= "font-size: 30px;" "font-weigh: bold"> experiment start\
+      <br>',
       choices: ['Next']
     };
     timeline.push(practice);
