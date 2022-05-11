@@ -426,7 +426,7 @@
       repetitions: 4,
       randomize_order: false
     };
-    //timeline.push(prac1_procedure);
+    timeline.push(prac1_procedure);
 
     var practice1 = {
       type: jsPsychHtmlButtonResponse,
@@ -461,7 +461,7 @@
       repetitions: 1,
       randomize_order: true
     };
-    //timeline.push(prac2_procedure);
+    timeline.push(prac2_procedure);
 
     var start = {
       type: jsPsychHtmlButtonResponse,
@@ -480,7 +480,7 @@
       repetitions: 4,
       randomize_order: true
     };
-    //timeline.push(test_procedure);
+    timeline.push(test_procedure);
 
     var break1_time = {
       type: jsPsychAnimation,
