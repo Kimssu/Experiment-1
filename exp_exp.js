@@ -452,7 +452,7 @@
       <br> a) has low diversity since all letters are thin,\
       <br> b) also low diversity since all letters are thick,\
       <br> c) has high diversity since letters have varying weights\
-      <br> ,br> In this task, diversity can be somewhere in between low (a, b) and high (c).\
+      <br> <br> In this task, diversity can be somewhere in between low (a, b) and high (c).\
       <br> You need to decide your own criterion, and use it through out the task.</p>',
       choices: ["Let's practice"]
     };
