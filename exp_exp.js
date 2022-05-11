@@ -102,7 +102,7 @@
         '<p><img src="https://kimssu.github.io/Experiment-1/letter-imgs/pro1.png"> \
         <br> <br> Once you start a trial, \
         <br> 1) A black rectangle will indicate the row you need to remember\
-        <br> 2) Then, 5 × 5 array of letters will be flashed quickly\
+        <br> 2) Then, 5 x 5 array of letters will be flashed quickly\
         <br> 3) You will choose the letter presented in the location of the black square (here, it is T)\
         <br> 4) Feedback (correct/wrong) will be provided</p>'
       ,
@@ -435,10 +435,10 @@
       stimulus: "<p><img src='https://kimssu.github.io/Experiment-1/letter-imgs/pro2.png'> \
       <br> <br> Now you will be asked one more question at the end of the trial,\
       <br> 1) - 4) will be the same.\
-      <br> 5) You will judge the font-weight diversity of the 5 × 5 array.\
-      <br> <br> <stlye='font-color: red';> BUT please remember that it is more important to \
+      <br> 5) You will judge the font-weight diversity of the 5 x 5 array.\
+      <br> <br> BUT please remember that it is more important to \
       report the letter in the black square correctly.\
-      <br> Before practice, let's see how high/low diversity letters look like</p>",
+      <br> Before practice, let's see how high/low diversity letters look like.</p>",
       choices: ['Next']
     };
     timeline.push(practice1);
