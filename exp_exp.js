@@ -433,7 +433,7 @@
     var practice1 = {
       type: jsPsychHtmlButtonResponse,
       stimulus: "<p><img src='https://kimssu.github.io/Experiment-1/letter-imgs/pro2.png'> \
-      <br><br> Now you will be asked one more question at the end of the trial,\
+      <br> <br> Now you will be asked one more question at the end of the trial,\
       <br> 1) - 4) will be the same.\
       <br> 5) You will judge the font-weight diversity of the 5 × 5 array.\
       <br> <br> <stlye='font-color: red';> BUT please remember that it is more important to \
@@ -448,7 +448,7 @@
       stimulus: '<p><img src="https://kimssu.github.io/Experiment-1/letter-imgs/div_l2.png">  \
       <img src="https://kimssu.github.io/Experiment-1/letter-imgs/div_l1.png">  \
       <img src="https://kimssu.github.io/Experiment-1/letter-imgs/div_h.png">  \
-      <br><br> In this example,\
+      <br> <br> In this example,\
       <br> a) has low diversity since all letters are thin,\
       <br> b) also low diversity since all letters are thick,\
       <br> c) has high diversity since letters have varying weights\
