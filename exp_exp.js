@@ -15,7 +15,8 @@
     all_imgs.push('https://kimssu.github.io/Experiment-1/letter-imgs/rcue-img.png');
     all_imgs.push('https://kimssu.github.io/Experiment-1/letter-imgs/cue-img.png');
 
-    all_imgs.push('https://kimssu.github.io/Experiment-1/letter-imgs/procedure.png');
+    all_imgs.push('https://kimssu.github.io/Experiment-1/letter-imgs/pro1.png');
+    all_imgs.push('https://kimssu.github.io/Experiment-1/letter-imgs/pro2.png');
     all_imgs.push('https://kimssu.github.io/Experiment-1/letter-imgs/div_h.png');
     all_imgs.push('https://kimssu.github.io/Experiment-1/letter-imgs/div_l1.png');  
     all_imgs.push('https://kimssu.github.io/Experiment-1/letter-imgs/div_l2.png');
