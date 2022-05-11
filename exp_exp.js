@@ -445,9 +445,9 @@
 
     var practice2 = {
       type: jsPsychHtmlButtonResponse,
-      stimulus: '<p><img src="https://kimssu.github.io/Experiment-1/letter-imgs/div_l2.png">  \
-      <img src="https://kimssu.github.io/Experiment-1/letter-imgs/div_l1.png">  \
-      <img src="https://kimssu.github.io/Experiment-1/letter-imgs/div_h.png">  \
+      stimulus: '<p><img src="https://kimssu.github.io/Experiment-1/letter-imgs/div_l2.png">   \
+      <img src="https://kimssu.github.io/Experiment-1/letter-imgs/div_l1.png">   \
+      <img src="https://kimssu.github.io/Experiment-1/letter-imgs/div_h.png">   \
       <br> <br> In this example,\
       <br> a) has low diversity since all letters are thin,\
       <br> b) also low diversity since all letters are thick,\
