@@ -17,9 +17,7 @@
 
     all_imgs.push('https://kimssu.github.io/Experiment-1/letter-imgs/pro1.png');
     all_imgs.push('https://kimssu.github.io/Experiment-1/letter-imgs/pro2.png');
-    all_imgs.push('https://kimssu.github.io/Experiment-1/letter-imgs/div_h.png');
-    all_imgs.push('https://kimssu.github.io/Experiment-1/letter-imgs/div_l1.png');  
-    all_imgs.push('https://kimssu.github.io/Experiment-1/letter-imgs/div_l2.png');
+    all_imgs.push('https://kimssu.github.io/Experiment-1/letter-imgs/div.png');
 
 
     const adj_row = [
@@ -445,9 +443,7 @@
 
     var practice2 = {
       type: jsPsychHtmlButtonResponse,
-      stimulus: '<p><img src="https://kimssu.github.io/Experiment-1/letter-imgs/div_l2.png">   \
-      <img src="https://kimssu.github.io/Experiment-1/letter-imgs/div_l1.png">   \
-      <img src="https://kimssu.github.io/Experiment-1/letter-imgs/div_h.png">   \
+      stimulus: '<p><img src="https://kimssu.github.io/Experiment-1/letter-imgs/div.png">\
       <br> <br> In this example,\
       <br> a) has low diversity since all letters are thin,\
       <br> b) also low diversity since all letters are thick,\
