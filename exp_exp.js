@@ -99,7 +99,7 @@
       type: jsPsychHtmlButtonResponse,
       stimulus: 
         '<p><img src="https://kimssu.github.io/Experiment-1/letter-imgs/pro1.png"> \
-        <br> Once you start a trial. \
+        <br> <br> Once you start a trial. \
         <br> 1) A black rectangle will indicate the row you need to remember\
         <br> 2) Then, 5 × 5 array of letters will be flashed quickly\
         <br> 3) You will choose the letter presented in the location of the black square (here, it is T)\
@@ -108,20 +108,6 @@
       choices: ["Let's practice"]
     };
     timeline.push(instructions);
-
-    
-        //'<img src="https://kimssu.github.io/Experiment-1/letter-imgs/procedure.png"> \
-        //<br><br> In this experiment, a row-sized square, the 25-letter array and a letter-sized square will appear in the center of the screen.\
-        //<br> The main task was to remember the letter at the location of a letter-sized square.\
-        //<br> A letter-sized square will appear within a row-sized square location.\
-        //<br> When a letter-sized square appears on the screen, Click the letter at that location.',
-        //'<img src="https://kimssu.github.io/Experiment-1/letter-imgs/div_l2.png"> \
-        //<img src="https://kimssu.github.io/Experiment-1/letter-imgs/div_l1.png"> \
-        //<img src="https://kimssu.github.io/Experiment-1/letter-imgs/div_h.png"> \
-        //<br> font-weight diversity question \
-        //<br> After reporting the letter, Click the button to indicate the font-weight diversity level (low or high)',
-        //'practice trial'//%
-
 
     var test_stimuli = [];
     for (let i = 0; i < 5; i++) {
@@ -445,8 +431,8 @@
 
     var practice1 = {
       type: jsPsychHtmlButtonResponse,
-      stimulus: "<p> \
-      <br> Now you will be asked one more question at the end of the trial,\
+      stimulus: "<p><img src='https://kimssu.github.io/Experiment-1/letter-imgs/pro2.png'> \
+      <br><br> Now you will be asked one more question at the end of the trial,\
       <br> 1) - 4) will be the same.\
       <br> 5) You will judge the font-weight diversity of the 5 × 5 array.\
       <br> <br> <stlye='font-color: red';> BUT please remember that it is more important to \
@@ -458,8 +444,10 @@
 
     var practice2 = {
       type: jsPsychHtmlButtonResponse,
-      stimulus: '<p> \
-      <br> In this example,\
+      stimulus: '<p><img src="https://kimssu.github.io/Experiment-1/letter-imgs/div_l2.png">  \
+      <img src="https://kimssu.github.io/Experiment-1/letter-imgs/div_l1.png">  \
+      <img src="https://kimssu.github.io/Experiment-1/letter-imgs/div_h.png">  \
+      <br><br> In this example,\
       <br> a) has low diversity since all letters are thin,\
       <br> b) also low diversity since all letters are thick,\
       <br> c) has high diversity since letters have varying weights\
