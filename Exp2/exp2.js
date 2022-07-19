@@ -571,7 +571,7 @@
       <br> b) also low diversity since all letters are thick,\
       <br> c) has high diversity since letters have varying weights.\
       <br> <br> In this task, diversity can be somewhere in between low (a, b) and high (c).\
-      <br> Note that you should ignore the noise and font color and only look at font-weight diversity. \
+      <br> Note that you should ignore the noise and letter color and only look at font-weight diversity. \
       <br> You need to decide your own criterion, and use it throughout the task.</p>',
       choices: ["Let's practice"]
     };
