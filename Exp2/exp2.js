@@ -165,8 +165,8 @@
     var instructions = {
         type: jsPsychHtmlButtonResponse,
         stimulus: 
-          '<p><img src="https://kimssu.github.io/Experiment-1/Exp2/letter-imgs/pro1_nk.png">\
-          <br> <img src="https://kimssu.github.io/Experiment-1/Exp2/letter-imgs/pro1_nr.png">\
+          '<p><img src="https://kimssu.github.io/Experiment-1/Exp2/letter-imgs/pro1_k.png">\
+          <br> <img src="https://kimssu.github.io/Experiment-1/Exp2/letter-imgs/pro1_r.png">\
           <br> <br> Once you start a trial,\
           <br> 1) A black or red rectangle will indicate the row you need to remember.\
           <br> 2) Then, 5 x 5 array of letters will be flashed quickly (ignore the noise at the cued row).\
