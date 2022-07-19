@@ -117,7 +117,7 @@
         });
       }
     };
-    //timeline.push(consent_form);
+    timeline.push(consent_form);
 
     var demo_info = {
       type: jsPsychSurvey,
@@ -148,7 +148,7 @@
       ],
       button_label_finish: 'Continue to Experiment'
     };
-    //timeline.push(demo_info);
+    timeline.push(demo_info);
 
     var preload = {
       type: jsPsychPreload,
@@ -556,9 +556,9 @@
       <br> <br> Now you will be asked one more question at the end of the trial,\
       <br> 1) - 4) will be the same.\
       <br> 5) You will judge the font-weight diversity of the 5 x 5 array.\
-      <br> <br> BUT please remember that it is more important to \
+      <br> <br> Please remember that it is more important to \
       report the letter in the black square correctly.\
-      Before practice, let's see how high/low diversity letters look like.</p>",
+      <br> Before practice, let's see how high/low diversity letters look like.</p>",
       choices: ['Next']
     };
     timeline.push(practice1);
@@ -571,6 +571,7 @@
       <br> b) also low diversity since all letters are thick,\
       <br> c) has high diversity since letters have varying weights.\
       <br> <br> In this task, diversity can be somewhere in between low (a, b) and high (c).\
+      <br> Note that you should ignore the noise and font color and only look at font-weight diversity. \
       <br> You need to decide your own criterion, and use it throughout the task.</p>',
       choices: ["Let's practice"]
     };
