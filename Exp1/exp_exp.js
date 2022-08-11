@@ -4,20 +4,20 @@
     var all_imgs = [];
     for (let l = 0; l < letter.length; l++) {
       for (let w = 0; w < width.length; w++) {
-        all_imgs.push('https://kimssu.github.io/Experiment-1/letter-imgs_110/'+letter[l]+'_'+width[w]+'.png');
+        all_imgs.push('https://kimssu.github.io/Experiment-1/Exp1/letter-imgs_110/'+letter[l]+'_'+width[w]+'.png');
       }
     }
     var time_imgs = [];
     for (let i = 1; i < 52; i++) {
-      time_imgs.push('https://kimssu.github.io/Experiment-1/time-imgs/time_'+i+'.png');
+      time_imgs.push('https://kimssu.github.io/Experiment-1/Exp1/time-imgs/time_'+i+'.png');
     }
 
-    all_imgs.push('https://kimssu.github.io/Experiment-1/letter-imgs/rcue-img.png');
-    all_imgs.push('https://kimssu.github.io/Experiment-1/letter-imgs/cue-img.png');
+    all_imgs.push('https://kimssu.github.io/Experiment-1/Exp1/letter-imgs/rcue-img.png');
+    all_imgs.push('https://kimssu.github.io/Experiment-1/Exp1/letter-imgs/cue-img.png');
 
-    all_imgs.push('https://kimssu.github.io/Experiment-1/letter-imgs/pro1.png');
-    all_imgs.push('https://kimssu.github.io/Experiment-1/letter-imgs/pro2.png');
-    all_imgs.push('https://kimssu.github.io/Experiment-1/letter-imgs/div.png');
+    all_imgs.push('https://kimssu.github.io/Experiment-1/Exp1/letter-imgs/pro1.png');
+    all_imgs.push('https://kimssu.github.io/Experiment-1/Exp1/letter-imgs/pro2.png');
+    all_imgs.push('https://kimssu.github.io/Experiment-1/Exp1/letter-imgs/div.png');
 
 
     const adj_row = [
@@ -97,7 +97,7 @@
     var instructions = {
       type: jsPsychHtmlButtonResponse,
       stimulus: 
-        '<p><img src="https://kimssu.github.io/Experiment-1/letter-imgs/pro1.png"> \
+        '<p><img src="https://kimssu.github.io/Experiment-1/Exp1/letter-imgs/pro1.png"> \
         <br> <br> Once you start a trial, \
         <br> 1) A black rectangle will indicate the row you need to remember\
         <br> 2) Then, 5 x 5 array of letters will be flashed quickly\
@@ -172,39 +172,39 @@
         trial.stimulus =
           `<table class="grid-5x5" cellpadding="0" cellspacing="0">
             <tr>
-              <td style="background-image: url(https://kimssu.github.io/Experiment-1/letter-imgs_110/`+trial.data.letter_array[0]+`_`+trial.data.width_array[0]+`.png)"></td>
-              <td style="background-image: url(https://kimssu.github.io/Experiment-1/letter-imgs_110/`+trial.data.letter_array[1]+`_`+trial.data.width_array[1]+`.png)"></td>
-              <td style="background-image: url(https://kimssu.github.io/Experiment-1/letter-imgs_110/`+trial.data.letter_array[2]+`_`+trial.data.width_array[2]+`.png)"></td>
-              <td style="background-image: url(https://kimssu.github.io/Experiment-1/letter-imgs_110/`+trial.data.letter_array[3]+`_`+trial.data.width_array[3]+`.png)"></td>
-              <td style="background-image: url(https://kimssu.github.io/Experiment-1/letter-imgs_110/`+trial.data.letter_array[4]+`_`+trial.data.width_array[4]+`.png)"></td>
+              <td style="background-image: url(https://kimssu.github.io/Experiment-1/Exp1/letter-imgs_110/`+trial.data.letter_array[0]+`_`+trial.data.width_array[0]+`.png)"></td>
+              <td style="background-image: url(https://kimssu.github.io/Experiment-1/Exp1/letter-imgs_110/`+trial.data.letter_array[1]+`_`+trial.data.width_array[1]+`.png)"></td>
+              <td style="background-image: url(https://kimssu.github.io/Experiment-1/Exp1/letter-imgs_110/`+trial.data.letter_array[2]+`_`+trial.data.width_array[2]+`.png)"></td>
+              <td style="background-image: url(https://kimssu.github.io/Experiment-1/Exp1/letter-imgs_110/`+trial.data.letter_array[3]+`_`+trial.data.width_array[3]+`.png)"></td>
+              <td style="background-image: url(https://kimssu.github.io/Experiment-1/Exp1/letter-imgs_110/`+trial.data.letter_array[4]+`_`+trial.data.width_array[4]+`.png)"></td>
             </tr>
             <tr>
-              <td style="background-image: url(https://kimssu.github.io/Experiment-1/letter-imgs_110/`+trial.data.letter_array[5]+`_`+trial.data.width_array[5]+`.png)"></td>
-              <td style="background-image: url(https://kimssu.github.io/Experiment-1/letter-imgs_110/`+trial.data.letter_array[6]+`_`+trial.data.width_array[6]+`.png)"></td>
-              <td style="background-image: url(https://kimssu.github.io/Experiment-1/letter-imgs_110/`+trial.data.letter_array[7]+`_`+trial.data.width_array[7]+`.png)"></td>
-              <td style="background-image: url(https://kimssu.github.io/Experiment-1/letter-imgs_110/`+trial.data.letter_array[8]+`_`+trial.data.width_array[8]+`.png)"></td>
-              <td style="background-image: url(https://kimssu.github.io/Experiment-1/letter-imgs_110/`+trial.data.letter_array[9]+`_`+trial.data.width_array[9]+`.png)"></td>
+              <td style="background-image: url(https://kimssu.github.io/Experiment-1/Exp1/letter-imgs_110/`+trial.data.letter_array[5]+`_`+trial.data.width_array[5]+`.png)"></td>
+              <td style="background-image: url(https://kimssu.github.io/Experiment-1/Exp1/letter-imgs_110/`+trial.data.letter_array[6]+`_`+trial.data.width_array[6]+`.png)"></td>
+              <td style="background-image: url(https://kimssu.github.io/Experiment-1/Exp1/letter-imgs_110/`+trial.data.letter_array[7]+`_`+trial.data.width_array[7]+`.png)"></td>
+              <td style="background-image: url(https://kimssu.github.io/Experiment-1/Exp1/letter-imgs_110/`+trial.data.letter_array[8]+`_`+trial.data.width_array[8]+`.png)"></td>
+              <td style="background-image: url(https://kimssu.github.io/Experiment-1/Exp1/letter-imgs_110/`+trial.data.letter_array[9]+`_`+trial.data.width_array[9]+`.png)"></td>
             </tr>
             <tr>
-              <td style="background-image: url(https://kimssu.github.io/Experiment-1/letter-imgs_110/`+trial.data.letter_array[10]+`_`+trial.data.width_array[10]+`.png)"></td>
-              <td style="background-image: url(https://kimssu.github.io/Experiment-1/letter-imgs_110/`+trial.data.letter_array[11]+`_`+trial.data.width_array[11]+`.png)"></td>
-              <td style="background-image: url(https://kimssu.github.io/Experiment-1/letter-imgs_110/`+trial.data.letter_array[12]+`_`+trial.data.width_array[12]+`.png)"></td>
-              <td style="background-image: url(https://kimssu.github.io/Experiment-1/letter-imgs_110/`+trial.data.letter_array[13]+`_`+trial.data.width_array[13]+`.png)"></td>
-              <td style="background-image: url(https://kimssu.github.io/Experiment-1/letter-imgs_110/`+trial.data.letter_array[14]+`_`+trial.data.width_array[14]+`.png)"></td>
+              <td style="background-image: url(https://kimssu.github.io/Experiment-1/Exp1/letter-imgs_110/`+trial.data.letter_array[10]+`_`+trial.data.width_array[10]+`.png)"></td>
+              <td style="background-image: url(https://kimssu.github.io/Experiment-1/Exp1/letter-imgs_110/`+trial.data.letter_array[11]+`_`+trial.data.width_array[11]+`.png)"></td>
+              <td style="background-image: url(https://kimssu.github.io/Experiment-1/Exp1/letter-imgs_110/`+trial.data.letter_array[12]+`_`+trial.data.width_array[12]+`.png)"></td>
+              <td style="background-image: url(https://kimssu.github.io/Experiment-1/Exp1/letter-imgs_110/`+trial.data.letter_array[13]+`_`+trial.data.width_array[13]+`.png)"></td>
+              <td style="background-image: url(https://kimssu.github.io/Experiment-1/Exp1/letter-imgs_110/`+trial.data.letter_array[14]+`_`+trial.data.width_array[14]+`.png)"></td>
             </tr>
             <tr>
-              <td style="background-image: url(https://kimssu.github.io/Experiment-1/letter-imgs_110/`+trial.data.letter_array[15]+`_`+trial.data.width_array[15]+`.png)"></td>
-              <td style="background-image: url(https://kimssu.github.io/Experiment-1/letter-imgs_110/`+trial.data.letter_array[16]+`_`+trial.data.width_array[16]+`.png)"></td>
-              <td style="background-image: url(https://kimssu.github.io/Experiment-1/letter-imgs_110/`+trial.data.letter_array[17]+`_`+trial.data.width_array[17]+`.png)"></td>
-              <td style="background-image: url(https://kimssu.github.io/Experiment-1/letter-imgs_110/`+trial.data.letter_array[18]+`_`+trial.data.width_array[18]+`.png)"></td>
-              <td style="background-image: url(https://kimssu.github.io/Experiment-1/letter-imgs_110/`+trial.data.letter_array[19]+`_`+trial.data.width_array[19]+`.png)"></td>
+              <td style="background-image: url(https://kimssu.github.io/Experiment-1/Exp1/letter-imgs_110/`+trial.data.letter_array[15]+`_`+trial.data.width_array[15]+`.png)"></td>
+              <td style="background-image: url(https://kimssu.github.io/Experiment-1/Exp1/letter-imgs_110/`+trial.data.letter_array[16]+`_`+trial.data.width_array[16]+`.png)"></td>
+              <td style="background-image: url(https://kimssu.github.io/Experiment-1/Exp1/letter-imgs_110/`+trial.data.letter_array[17]+`_`+trial.data.width_array[17]+`.png)"></td>
+              <td style="background-image: url(https://kimssu.github.io/Experiment-1/Exp1/letter-imgs_110/`+trial.data.letter_array[18]+`_`+trial.data.width_array[18]+`.png)"></td>
+              <td style="background-image: url(https://kimssu.github.io/Experiment-1/Exp1/letter-imgs_110/`+trial.data.letter_array[19]+`_`+trial.data.width_array[19]+`.png)"></td>
             </tr>
             <tr>
-              <td style="background-image: url(https://kimssu.github.io/Experiment-1/letter-imgs_110/`+trial.data.letter_array[20]+`_`+trial.data.width_array[20]+`.png)"></td>
-              <td style="background-image: url(https://kimssu.github.io/Experiment-1/letter-imgs_110/`+trial.data.letter_array[21]+`_`+trial.data.width_array[21]+`.png)"></td>
-              <td style="background-image: url(https://kimssu.github.io/Experiment-1/letter-imgs_110/`+trial.data.letter_array[22]+`_`+trial.data.width_array[22]+`.png)"></td>
-              <td style="background-image: url(https://kimssu.github.io/Experiment-1/letter-imgs_110/`+trial.data.letter_array[23]+`_`+trial.data.width_array[23]+`.png)"></td>
-              <td style="background-image: url(https://kimssu.github.io/Experiment-1/letter-imgs_110/`+trial.data.letter_array[24]+`_`+trial.data.width_array[24]+`.png)"></td>
+              <td style="background-image: url(https://kimssu.github.io/Experiment-1/Exp1/letter-imgs_110/`+trial.data.letter_array[20]+`_`+trial.data.width_array[20]+`.png)"></td>
+              <td style="background-image: url(https://kimssu.github.io/Experiment-1/Exp1/letter-imgs_110/`+trial.data.letter_array[21]+`_`+trial.data.width_array[21]+`.png)"></td>
+              <td style="background-image: url(https://kimssu.github.io/Experiment-1/Exp1/letter-imgs_110/`+trial.data.letter_array[22]+`_`+trial.data.width_array[22]+`.png)"></td>
+              <td style="background-image: url(https://kimssu.github.io/Experiment-1/Exp1/letter-imgs_110/`+trial.data.letter_array[23]+`_`+trial.data.width_array[23]+`.png)"></td>
+              <td style="background-image: url(https://kimssu.github.io/Experiment-1/Exp1/letter-imgs_110/`+trial.data.letter_array[24]+`_`+trial.data.width_array[24]+`.png)"></td>
             </tr>
           </table>`;
       },
@@ -430,7 +430,7 @@
 
     var practice1 = {
       type: jsPsychHtmlButtonResponse,
-      stimulus: "<p><img src='https://kimssu.github.io/Experiment-1/letter-imgs/pro2.png'> \
+      stimulus: "<p><img src='https://kimssu.github.io/Experiment-1/Exp1/letter-imgs/pro2.png'> \
       <br> <br> Now you will be asked one more question at the end of the trial,\
       <br> 1) - 4) will be the same.\
       <br> 5) You will judge the font-weight diversity of the 5 x 5 array.\
@@ -443,7 +443,7 @@
 
     var practice2 = {
       type: jsPsychHtmlButtonResponse,
-      stimulus: '<p><img src="https://kimssu.github.io/Experiment-1/letter-imgs/div.png">\
+      stimulus: '<p><img src="https://kimssu.github.io/Experiment-1/Exp1/letter-imgs/div.png">\
       <br> <br> In this example,\
       <br> a) has low diversity since all letters are thin,\
       <br> b) also low diversity since all letters are thick,\
